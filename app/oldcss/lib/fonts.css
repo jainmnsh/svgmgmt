@@ -1,0 +1,28 @@
+@font-face {
+    font-family: OS-Regular;
+    src: url('fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: OS-Light;
+    src: url('fonts/OpenSans-Light.ttf');
+}
+@font-face {
+    font-family: OS-Bold;
+    src: url('fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+    font-family: TKBold;
+    src: url('fonts/TKBold.TTF');
+}
+@font-face {
+    font-family: TKLogo;
+    src: url('fonts/TKLogo.ttf');
+}
+@font-face {
+    font-family: TKMed;
+    src: url('fonts/TKMed.TTF');
+}
+@font-face {
+    font-family: TKReg;
+    src: url('fonts/TKReg.ttf');
+}

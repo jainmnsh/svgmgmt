@@ -1,0 +1,27 @@
+{"event": {
+    "action": "state-change",
+    "timestamp": 1411750709,
+    "data": {
+        "lat": 47.795614,
+        "lastName": "jain",
+        "lon": -122.17741400000001,
+        "firstName": "Manish"
+    },
+    "uuid": "jain Manish"
+}, "message": [
+    [
+        {
+            "action": "state-change",
+            "timestamp": 1411750709,
+            "data": {
+                "lat": 47.795614,
+                "lastName": "jain",
+                "lon": -122.17741400000001,
+                "firstName": "Manish"
+            },
+            "uuid": "jain Manish"
+        }
+    ],
+    "14117507092880749",
+    "SvgMgmt-pnpres"
+], "channel": "SvgMgmt"}

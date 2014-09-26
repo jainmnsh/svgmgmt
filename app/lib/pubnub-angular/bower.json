@@ -1,0 +1,9 @@
+{
+    "name": "pubnub-angular",
+    "version": "3.6.7",
+    "main": "./pubnub-angular.js",
+    "dependencies": {
+        "angular": "1.2.25",
+        "pubnub": "3.6.7"
+    }
+}

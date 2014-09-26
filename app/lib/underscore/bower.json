@@ -1,0 +1,7 @@
+{
+    "name": "underscore",
+    "version": "1.7.0",
+    "main": "./underscore-min.js",
+    "dependencies": {
+    }
+}

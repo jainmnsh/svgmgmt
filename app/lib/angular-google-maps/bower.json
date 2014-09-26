@@ -1,0 +1,8 @@
+{
+    "name": "angular-google-maps",
+    "version": "1.2.1",
+    "main": "./angular-google-maps.min.js",
+    "dependencies": {
+        "underscore": "1.7.0"
+    }
+}

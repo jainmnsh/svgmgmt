@@ -1,0 +1,8 @@
+{
+    "name": "pubnub-crypto",
+    "version": "3.1.2",
+    "main": "./pubnub-crypto.min.js",
+    "dependencies": {
+        "pubnub": "3.6.7"
+    }
+}

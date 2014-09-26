@@ -1,0 +1,142 @@
+<!doctype html>
+  <html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="HandheldFriendly" content="True">
+      <meta name="MobileOptimized" content="320">
+      <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
+      <meta http-equiv="cleartype" content="on">
+      <title>Messaging App</title>
+       <meta name="description" content="">
+
+    <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+        <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/custom.css -->
+        <!-- injector:css -->
+        <link rel="stylesheet" href="css/demo.css" />
+        <!-- endinjector -->
+    <!-- endbuild -->
+
+      <!--<script type="text/javascript">-->
+          <!--/* iphone 4 and 4s overrides */-->
+          <!--var iphone4Css = document.createElement("link");-->
+          <!--iphone4Css.media = "screen and (device-width: 320px) and (device-height: 480px) and (-webkit-min-device-pixel-ratio: 2)";-->
+          <!--iphone4Css.rel = "stylesheet";-->
+          <!--iphone4Css.href = "css/iphone.css";-->
+
+          <!--/* android styling  overrides */-->
+          <!--var androidCss = document.createElement("link");-->
+          <!--androidCss.media = "screen and (device-width: 360px) and (device-height: 640px) and (-webkit-min-device-pixel-ratio: 2)";-->
+          <!--androidCss.rel = "stylesheet";-->
+          <!--androidCss.href = "css/android.css";-->
+
+          <!--if(navigator.userAgent.match(/Android/i)) {-->
+              <!--console.debug('App deploying on Android...')-->
+              <!--document.getElementsByTagName("head")[0].appendChild(androidCss);-->
+          <!--} else {-->
+              <!--console.debug('App deploying on iphone 4');-->
+              <!--document.getElementsByTagName("head")[0].appendChild(iphone4Css);-->
+          <!--}-->
+      <!--</script>-->
+
+
+      <style type="text/css">
+          #map-canvas { height:300px }
+      </style>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2JCNdObto1ZViWyvXNkmUHAFq8AQQET8&sensor=false&;language=en"></script>
+      <script src="http://jsconsole.com/remote.js?7352D6FD-1785-4ED2-B174-83500636C230"></script>
+  </head>
+
+  <body>
+    <!-- =================== Navigation bar =================== -->
+    <!--<header class="navbar navbar-default navbar-fixed-top">-->
+        <!--<div class="navbar-inner">-->
+            <!--<div class="container">-->
+                <!--<div class="navbar-header">-->
+                    <!--<a class="navbar-brand visible-xs" href="#">-->
+                        <!--&lt;!&ndash;pubNubChat&ndash;&gt;-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</header>-->
+
+    <!--<div class="header-placeholder"></div>-->
+    <div role="main">
+        <header class="bs-header text-center" id="overview">
+            <div class="container">
+                <h4 id="app-heading">
+                    Svg.Mgmt Messaging
+                </h4>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <section id="uiview" ui-view></section>
+
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.main -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="new-footer-text">
+                <div class="new-logo-footer">
+            <span><b class="foot_logo">ThyssenKrupp Elevator AG</b>
+                <small>
+                    Copyright &copy; {{ copyrightDate }} by ThyssenKrupp Elevator &nbsp;&nbsp;|
+                    &nbsp;&nbsp; <span ng-click="openUrl(termsLink)">Terms &amp; Conditions</span></small>
+                </span>
+                </div>
+            </div>
+            <!--<p>Code licensed under <a href="https://github.com/keshavos/generator-angularjs-cordova/">MIT License</a>.</p>-->
+        </div>
+    </footer>
+
+    <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="lib/jquery/dist/jquery.js"></script>
+        <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-resource/angular-resource.js"></script>
+        <script src="lib/angular-mocks/angular-mocks.js"></script>
+        <script src="lib/angular-cookies/angular-cookies.js"></script>
+        <script src="lib/angular-animate/angular-animate.js"></script>
+        <script src="lib/angular-touch/angular-touch.js"></script>
+        <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="lib/angular-ui-utils/ui-utils.js"></script>
+        <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="lib/underscore/underscore-min.js"></script>
+        <script src="lib/angular-google-maps/angular-google-maps.min.js"></script>
+        <script src="lib/pubnub/pubnub.min.js"></script>
+        <script src="lib/pubnub-crypto/pubnub-crypto.min.js"></script>
+        <script src="lib/pubnub-angular/pubnub-angular.js"></script>
+        <!-- endbower -->
+    <!-- endbuild -->
+
+
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2JCNdObto1ZViWyvXNkmUHAFq8AQQET8&sensor=false&;language=en"></script>-->
+    <!--<script src="lib/underscore/underscore.js"></script>-->
+
+    <!-- build:js scripts/custom.js -->
+        <!-- injector:js -->
+        <script src="js/config.js"></script>
+        <script src="js/application.js"></script>
+        <script src="modules/core/core.js"></script>
+        <script src="modules/core/config/routes.js"></script>
+        <script src="modules/core/controllers/home.js"></script>
+        <script src="modules/core/controllers/main.js"></script>
+        <!-- endinjector -->
+    <!-- endbuild -->
+
+  </body>
+</html>

@@ -1,0 +1,7 @@
+{
+    "name": "pubnub",
+    "version": "3.6.7",
+    "main": "./pubnub.min.js",
+    "dependencies": {
+    }
+}

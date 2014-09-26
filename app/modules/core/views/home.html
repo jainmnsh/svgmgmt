@@ -1,0 +1,39 @@
+<p id="home-content">
+
+<div class="login-form-wrapper">
+    <div>
+        <form name="Register">
+        <div>
+            <label>First Name</label><br>
+
+            <input class="login-form-input"
+                   type="text"
+                   required
+                   ng-model="firstName"
+                   autocomplete="off"
+                   autocapitalize="off">
+        </div>
+        <br/>
+
+        <div>
+            <label>Last Name</label><br>
+            <input class="login-form-input"
+                   type="text"
+                   required
+                   ng-model="lastName"
+                   ng-keyPress="keyBoardInput($event)"
+                   autocomplete="off"
+                   autocapitalize="off">
+        </div>
+
+        <button ng-click="regUser()"
+                ng-keyPress="keyBoardInput($event)"
+                ng-disabled="Register.$invalid"
+                class="btn btn-default login-btn">Submit
+        </button>
+    </form>
+    </div>
+
+</div>
+
+</p>

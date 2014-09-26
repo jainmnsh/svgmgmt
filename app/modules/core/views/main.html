@@ -1,0 +1,73 @@
+<div ng-cloak>
+    <h4>Online Users
+        <div ng-show="status">
+            <h4 style="background-color: #008000">Connected</h4>
+        </div>
+
+        <div ng-hide="status">
+            <h4 style="background-color: #FF0000"> Disconnected</h4>
+        </div>
+    </h4>
+
+    <ul>
+        <li ng-repeat="user in users">
+               <span ng-class-odd="'odd'" ng-class-even="'even'">
+                {{user}}
+               </span>
+        </li>
+    </ul>
+    <br/>
+
+    <h4>Chat History ({{messages.length}})</h4>
+
+    <div id="textView" style="height: 200px;overflow: scroll;border: 2px solid; margin-left: 5px; margin-right: 5px">
+        <code>
+            <ul id="double"><span>
+                <li ng-repeat="message in messages">
+                  <span ng-class-odd="'odd'" ng-class-even="'even'">
+                    {{message}}
+                 </span>
+            </li>
+            </ul>
+        </code>
+    </div>
+    <div>
+        <form name="chat">
+
+            <input
+                    type="text"
+                    required
+                    ng-model="newMessage"
+                    ng-keyPress="keyBoardInput($event)"
+                    autocomplete="off"
+                    autocapitalize="off">
+
+
+            <button ng-click="publish()"
+                    ng-keyPress="keyBoardInput($event)"
+                    ng-disabled="chat.$invalid"
+                    class="btn btn-default submit-btn">Send
+            </button>
+
+            <button ng-click="unSubscribe()"
+                    ng-keyPress="keyBoardInput($event)"
+                    class="btn cancel-btn">Exit
+            </button>
+        </form>
+
+    </div>
+
+
+    <div data-ng-init="initialize()">
+        <div id='map-canvas'></div>
+    </div>
+
+    <br/>
+
+    <!--<div class="well">-->
+    <!--<ul>-->
+    <!--<li ng-repeat="userD in userDatas">{{userD}}</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+
+</div>
